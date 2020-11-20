@@ -62,3 +62,18 @@ int main () {
 }
 ```
 
+# string 转 str
+
+注意：strlen 不包含“\0”
+
+```c
+int main()
+{
+	string stringTest = "111";
+	char* strTest = (char*)stringTest.c_str();
+	cout << "stringTest len = " << stringTest.length()<< endl;
+	cout << "strTest    len = " << strlen(strTest) << endl;
+	return(0);
+}
+```
+
